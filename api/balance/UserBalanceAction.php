@@ -1,10 +1,10 @@
 <?php
-namespace app\api;
+namespace app\api\balance;
 
 use app\models\BalanceHistory;
 use yii\rest\Action;
 
-class BalanceAction extends Action
+class UserBalanceAction extends Action
 {
 	/**
 	 * Displays a last balance row for user .

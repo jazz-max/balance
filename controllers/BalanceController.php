@@ -15,7 +15,7 @@ class BalanceController extends ActiveController
 //		unset($actions['delete'], $actions['create']);
 //		$actions['user-balance'] = [$this,'actionUserBalance'];
 		$actions['user-balance'] = [
-			'class' => 'app\api\BalanceAction',
+			'class' => 'app\api\balance\UserBalanceAction',
 			'modelClass' => $this->modelClass,
 			'checkAccess' => [$this, 'checkAccess'],
 		];
