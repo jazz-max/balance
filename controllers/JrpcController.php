@@ -28,7 +28,7 @@ class JrpcController extends \JsonRpc2\Controller
 			->where ( ['user_id' => $user_id] )
 			->orderBy ( ['created_at' => SORT_DESC, 'id' => SORT_DESC] )
 			->limit ( 1 )
-			->one ();
+			->one () ; //  тут можно встроить обработку ситуации есл ине найдено
 	}
 
 	public function actionBalanceHistory ($user_id, $limit)
@@ -47,7 +47,7 @@ class JrpcController extends \JsonRpc2\Controller
 				->where(["user_id"=>$user_id])
 				->orderBy ( ['created_at' => SORT_DESC, 'id' => SORT_DESC] )
 				->limit ( $limit )
-				->all ();
+				->all (); //  тут можно встроить обработку ситуации есл ине найдено
 		}
 	}
 
