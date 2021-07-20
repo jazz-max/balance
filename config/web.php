@@ -46,26 +46,12 @@ $config = [
 			],
 		],
 		'db'           => $db,
-		'urlManager'   => [
-			'enablePrettyUrl'     => true,
-			'enableStrictParsing' => true,
-			'showScriptName'      => false,
-			'rules'               => [
-				['class'         => 'yii\rest\UrlRule',
-				 'controller'    => 'balance',
-				 'except'          => ['delete', 'create', 'edit', 'update'],
-				 'extraPatterns' => [
-					 'GET user/<id>' => 'user-balance',
-				 ]
-				],
-			],
-		]
+
 		/*'urlManager' => [
 			'enablePrettyUrl' => true,
 			'enableStrictParsing' => true,
 			'showScriptName' => false,
 			'rules' => [
-				'GET <controller>/<action>/<id>'  => '<controller>/<action>',
 			],
 		],*/
 
