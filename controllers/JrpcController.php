@@ -31,6 +31,12 @@ class JrpcController extends \JsonRpc2\Controller
 			->one () ; //  тут можно встроить обработку ситуации есл ине найдено
 	}
 
+	/**
+	 *
+	 * @param $user_id - если задан 0 то вернутся зписи для всех пользователей
+	 * @param $limit
+	 *
+	 */
 	public function actionBalanceHistory ($user_id, $limit)
 	{
 		$user_id = (int) $user_id;
