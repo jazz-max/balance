@@ -4,7 +4,16 @@
 namespace app\models;
 
 
-class BalanceHistory extends \yii\db\ActiveRecord
+use yii\db\ActiveRecord;
+
+/**
+ * @property mixed|null id
+ * @property mixed|null created_at
+ * @property mixed|null user_id
+ * @property mixed|null value
+ * @property mixed|null balance
+ */
+class BalanceHistory extends ActiveRecord
 {
 	public function __toString ()
 	{

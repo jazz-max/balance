@@ -5,8 +5,9 @@ namespace app\controllers;
 
 
 use app\models\BalanceHistory;
+use JsonRpc2\Controller;
 
-class JrpcController extends \JsonRpc2\Controller
+class JrpcController extends Controller
 {
 	// можно конечно придумать регекспы и пр замены но так надежнее
 	protected static $method2action
